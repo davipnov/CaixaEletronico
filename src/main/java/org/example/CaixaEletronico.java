@@ -29,5 +29,11 @@ public class CaixaEletronico {
         System.out.println("Total em caixa: " + total);
     }
 
+    public void realizarSaque(int valor) {
+        if(valor % 10 != 0){
+            System.out.println("Valor inválido. O valor deve ser múltiplo de 10.");
+            return;
+        }
+    }
 
 }
