@@ -34,6 +34,10 @@ public class CaixaEletronico {
             System.out.println("Valor inválido. O valor deve ser múltiplo de 10.");
             return;
         }
+        int restante = valor;
+        int usar100 = restante / 100;
+        usar100 = Math.min(usar100, notas100);
     }
+
 
 }
