@@ -37,6 +37,28 @@ public class CaixaEletronico {
         int restante = valor;
         int usar100 = restante / 100;
         usar100 = Math.min(usar100, notas100);
+        restante = restante - usar100 * 100;
+
+        int usar50 = restante / 50;
+        usar50 = Math.min(usar50, notas50);
+        restante = restante - usar50 * 50;
+
+        int usar20 = restante / 20;
+        usar20 = Math.min(usar20, notas20);
+        restante = restante - usar20 * 20;
+
+        int usar10 = restante / 10;
+        usar10 = Math.min(usar10, notas10);
+        restante = restante - usar10 * 10;
+
+        if (restante != 0){
+
+            System.out.println("Não foi possível realizar o saque com as notas disponíveis.");
+        }
+        notas100 -= usar100;
+        notas50 -= usar50;
+        notas20 -= usar20;
+        notas10 -= usar10;
     }
 
 
