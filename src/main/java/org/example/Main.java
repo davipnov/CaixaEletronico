@@ -11,7 +11,7 @@ public class Main {
 
         int opcao;
 
-        do{
+        do {
 
             System.out.println("1 - Saldo");
             System.out.println("2 - Saque");
@@ -19,7 +19,7 @@ public class Main {
 
             opcao = sc.nextInt();
 
-            switch(opcao){
+            switch (opcao) {
                 case 1:
                     caixa.verficarSaldo();
                     break;
@@ -29,8 +29,8 @@ public class Main {
                     caixa.realizarSaque(valor);
                     break;
 
-            }while (opcao !=3);
-        }
+            }
 
+        }while (opcao != 3) ;
     }
 }
