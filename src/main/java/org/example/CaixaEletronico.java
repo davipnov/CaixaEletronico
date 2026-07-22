@@ -20,12 +20,14 @@ public class CaixaEletronico {
         System.out.println("Notas de 50: " + notas50);
         System.out.println("Notas de 20: " + notas20);
         System.out.println("Notas de 10: " + notas10);
+
+        int total = notas100 * 100 +
+                notas50 * 50 +
+                notas20 * 20 +
+                notas10 * 10;
+
+        System.out.println("Total em caixa: " + total);
     }
 
-    int total = notas100 * 100 +
-            notas50 * 50 +
-            notas20 + 20 +
-            notas10 * 10;
 
-    System.out.println("Total em caixa: " + total);
 }
